@@ -819,6 +819,7 @@
                 <div class="navbar-menu">
                     <button class="navbar-item active" onclick="scrollToSection('accueil')">Accueil</button>
                     <button class="navbar-item" onclick="scrollToSection('formations')">Formations</button>
+                    <button class="navbar-item" onclick="scrollToSection('admission')">Admission</button>
                     <button class="navbar-item" onclick="scrollToSection('actualites')">Actualités</button>
                     <button class="navbar-item" onclick="scrollToSection('contact')">Contact</button>
                 </div>
@@ -834,6 +835,7 @@
         <div class="mobile-menu" id="mobile-menu">
             <button class="mobile-menu-item active" onclick="scrollToSection('accueil')">Accueil</button>
             <button class="mobile-menu-item" onclick="scrollToSection('formations')">Formations</button>
+            <button class="mobile-menu-item" onclick="scrollToSection('admission')">Admission</button>
             <button class="mobile-menu-item" onclick="scrollToSection('actualites')">Actualités</button>
             <button class="mobile-menu-item" onclick="scrollToSection('contact')">Contact</button>
         </div>
@@ -862,6 +864,43 @@
                         Nous contacter
                     </button>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Section -->
+    <section id="admission" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="section-title">Admission</h2>
+            </div>
+            <div class="mb-8 text-gray-700 text-lg">
+                <p>L'accès en première année de Licence est ouvert aux bacheliers des séries : <b>S1, S1A, S2, S2A, S3 et STEG</b>.<br>
+                Pour plus d'informations sur les offres de formation, ainsi que les critères d’admission, de partenariat ou de collaboration, n'hésitez pas à contacter UFR-STA via le mail suivant : <a href="mailto:ufr-sta@uam.edu.sn" class="text-blue-600 hover:underline">ufr-sta@uam.edu.sn</a></p>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="admission-table w-full text-center border border-brown-600 rounded-lg">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 border-b font-semibold">Filières<br><span class="text-xs font-normal"></span></th>
+                            <th class="py-3 px-4 border-b font-semibold">Séries au bac</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 font-semibold">MPI<br><span class="text-xs font-normal">Mathématiques, Physique, Informatique</span></td>
+                            <td class="py-3 px-4">S1, S1A, S2, S2A, S3 et S4</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-semibold">SML<br><span class="text-xs font-normal">Sciences de la Mer et du Littoral</span></td>
+                            <td class="py-3 px-4">S1, S1A, S2, S2A, S3 et S4</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-semibold">MIASS<br><span class="text-xs font-normal">Mathématiques et Informatique Appliquées aux Sciences Sociales</span></td>
+                            <td class="py-3 px-4">S1, S1A, S2, S2A, S3, S4 et STEG</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
@@ -1121,7 +1160,7 @@
                     <ul class="space-y-2 text-gray-400">
                         <li><a href="https://uam.sn" class="hover:text-white transition-colors" target="_blank">UAM</a></li>
                         <li><a href="#" class="hover:text-white transition-colors">Recherche</a></li>
-                        <li><a href="http://uam.sn/bienvenue-a-la-bu/" class="hover:text-white transition-colors">Bibliothèque</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Bibliothèque</a></li>
                     </ul>
                 </div>
                 <div>
