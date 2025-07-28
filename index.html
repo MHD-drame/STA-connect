@@ -472,6 +472,7 @@
             height: 100%;
             object-fit: cover;
             transition: transform 0.3s ease;
+            display: block;
         }
 
         .formation-card:hover .card-image img {
@@ -602,6 +603,7 @@
             height: 100%;
             object-fit: cover;
             transition: transform 0.3s ease;
+            display: block;
         }
 
         .news-card:hover .news-image img {
@@ -739,6 +741,20 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            .card-image {
+                height: 120px;
+            }
+            .news-image {
+                height: 120px;
+            }
+            .hero-section::before,
+            .hero-section::after,
+            .hero-section .slide3 {
+                min-height: 180px;
+                max-height: 220px;
+                height: 40vw;
+                background-size: cover;
+            }
             .navbar-menu {
                 display: none;
             }
