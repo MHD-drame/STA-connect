@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UFR STA - Sciences et Technologies Avancées</title>
     <style>
+        /* Admission Table Styles */
+        .admission-table th, .admission-table td {
+            border: 2px solid #8b4513 !important;
+        }
+        .admission-table th {
+            background: #f7fafc;
+        }
         /* Reset and Base Styles */
         * {
             box-sizing: border-box;
@@ -868,49 +875,30 @@
         </div>
     </section>
 
-    <!-- Admission Section -->
-    <section id="admission" class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="section-title">Admission</h2>
-            </div>
-            <div class="mb-8 text-gray-700 text-lg">
-                <p>L'accès en première année de Licence est ouvert aux bacheliers des séries : <b>S1, S1A, S2, S2A, S3 et STEG</b>.<br>
-                Pour plus d'informations sur les offres de formation, ainsi que les critères d’admission, de partenariat ou de collaboration, n'hésitez pas à contacter UFR-STA via le mail suivant : <a href="mailto:ufr-sta@uam.edu.sn" class="text-blue-600 hover:underline">ufr-sta@uam.edu.sn</a></p>
-            </div>
-            <div class="overflow-x-auto">
-                <table class="admission-table w-full text-center border border-brown-600 rounded-lg">
-                    <thead>
-                        <tr>
-                            <th class="py-3 px-4 border-b font-semibold">Filières<br><span class="text-xs font-normal"></span></th>
-                            <th class="py-3 px-4 border-b font-semibold">Séries au bac</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="py-3 px-4 font-semibold">MPI<br><span class="text-xs font-normal">Mathématiques, Physique, Informatique</span></td>
-                            <td class="py-3 px-4">S1, S1A, S2, S2A, S3 et S4</td>
-                        </tr>
-                        <tr>
-                            <td class="py-3 px-4 font-semibold">SML<br><span class="text-xs font-normal">Sciences de la Mer et du Littoral</span></td>
-                            <td class="py-3 px-4">S1, S1A, S2, S2A, S3 et S4</td>
-                        </tr>
-                        <tr>
-                            <td class="py-3 px-4 font-semibold">MIASS<br><span class="text-xs font-normal">Mathématiques et Informatique Appliquées aux Sciences Sociales</span></td>
-                            <td class="py-3 px-4">S1, S1A, S2, S2A, S3, S4 et STEG</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
     <section class="ufr-description-section bg-white py-12">
     <div class="max-w-4xl mx-auto px-4 text-center">
         <h2 class="section-title">À propos de l'UFR STA</h2>
         <p class="text-gray-600 text-lg mt-4 leading-relaxed">
         L'Unité de Formation et de Recherche en Sciences et Technologies Avancées (UFR STA) de l'Université Amadou Mahtar Mbow forme une nouvelle génération de scientifiques et d’innovateurs capables de répondre aux défis contemporains. 
         Elle offre des programmes pluridisciplinaires alliant rigueur académique, compétences pratiques et ouverture sur les enjeux sociétaux.
+        L’UFR Sciences et Technologies Avancées (STA) de l’UAM ambitionne 
+        d’être un creuset d’excellence académique pour le développement 
+        des talents, un véritable hub scientifique, technologique, numérique et 
+        d’innovation de référence en Afrique au service des besoins de 
+        développement socio-économique du Sénégal et au-delà.
+        Les étudiants et l’ensemble des acteurs y trouveront (i) des formations 
+        innovantes adaptées aux besoins du marché de l’emploi, (ii) un corps 
+        professoral qualifié et engagé, (iii) une dynamique partenariale très 
+        forte sur le plan académique et avec les entreprises et institutions de 
+        recherche, tant au niveau national qu’international, (iv) un 
+        environnement favorable à l’apprentissage, à l’acquisition de 
+        connaissances et de compétences, à l'éclosion des jeunes talents 
+        pour l’entreprenariat et le développement de startup.
+        L’UFR Sciences et Technologies Avancées de l’UAM délivre des 
+        diplômes de Licence, de Master et de Doctorat. En fonction des 
+        besoins du marché de l’emploi et des demandes du milieu socio
+        professionnel (VAE), l’UFR STA proposera des formations certifiantes 
+        avec la délivrance d’un certificat.
         </p>
     </div>
     </section>
@@ -1001,6 +989,43 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Admission Section -->
+    <section id="admission" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="section-title">Admission</h2>
+            </div>
+            <div class="mb-8 text-gray-700 text-lg">
+                <p>L'accès en première année de Licence est ouvert aux bacheliers des séries : <b>S1, S1A, S2, S2A, S3 et STEG</b>.<br>
+                Pour plus d'informations sur les offres de formation, ainsi que les critères d’admission, de partenariat ou de collaboration, n'hésitez pas à contacter UFR-STA via le mail suivant : <a href="mailto:ufr-sta@uam.edu.sn" class="text-blue-600 hover:underline">ufr-sta@uam.edu.sn</a></p>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="admission-table w-full text-center border border-brown-600 rounded-lg">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 border-b font-semibold">Filières<br><span class="text-xs font-normal"></span></th>
+                            <th class="py-3 px-4 border-b font-semibold">Séries au bac</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 font-semibold">MPI<br><span class="text-xs font-normal">Mathématiques, Physique, Informatique</span></td>
+                            <td class="py-3 px-4">S1, S1A, S2, S2A, S3 et S4</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-semibold">SML<br><span class="text-xs font-normal">Sciences de la Mer et du Littoral</span></td>
+                            <td class="py-3 px-4">S1, S1A, S2, S2A, S3 et S4</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-semibold">MIASS<br><span class="text-xs font-normal">Mathématiques et Informatique Appliquées aux Sciences Sociales</span></td>
+                            <td class="py-3 px-4">S1, S1A, S2, S2A, S3, S4 et STEG</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
