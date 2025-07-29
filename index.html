@@ -844,6 +844,7 @@
                 
                 <div class="navbar-menu">
                     <button class="navbar-item active" onclick="scrollToSection('accueil')">Accueil</button>
+                    <button class="navbar-item" onclick="scrollToSection('departements')">Départements</button>
                     <button class="navbar-item" onclick="scrollToSection('formations')">Formations</button>
                     <button class="navbar-item" onclick="scrollToSection('admission')">Admission</button>
                     <button class="navbar-item" onclick="scrollToSection('actualites')">Actualités</button>
@@ -860,6 +861,7 @@
         
         <div class="mobile-menu" id="mobile-menu">
             <button class="mobile-menu-item active" onclick="scrollToSection('accueil')">Accueil</button>
+            <button class="mobile-menu-item" onclick="scrollToSection('departements')">Départements</button>
             <button class="mobile-menu-item" onclick="scrollToSection('formations')">Formations</button>
             <button class="mobile-menu-item" onclick="scrollToSection('admission')">Admission</button>
             <button class="mobile-menu-item" onclick="scrollToSection('actualites')">Actualités</button>
@@ -868,6 +870,39 @@
     </nav>
 
     <!-- Hero Section -->
+    <!-- Départements Section -->
+    <section id="departements" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Départements</h2>
+                <p class="section-description">Découvrez nos deux départements, chacun porteur d'une vision scientifique et pédagogique forte.</p>
+            </div>
+            <div class="grid grid-cols-1 grid-cols-2 gap-8">
+                <!-- Département MIM -->
+                <div class="formation-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Département MIM">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Département MIM</h3>
+                        <h4 class="card-subtitle">Mathématiques, Informatique et Modélisation</h4>
+                        <p class="card-description">Le département MIM forme des étudiants à la pointe des mathématiques appliquées, de l'informatique et de la modélisation, pour répondre aux défis de la science des données, de l'intelligence artificielle et de la recherche opérationnelle.</p>
+                    </div>
+                </div>
+                <!-- Département SMU -->
+                <div class="formation-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Département SMU">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Département SMU</h3>
+                        <h4 class="card-subtitle">Sciences de la Matière et de l'Univers</h4>
+                        <p class="card-description">Le département SMU propose une formation pluridisciplinaire en physique, chimie et sciences de la Terre, ouvrant sur les métiers de la recherche, de l'enseignement et de l'innovation technologique.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="accueil" class="hero-section">
         <div class="hero-overlay"></div>
         <div class="slide3"></div>
@@ -1334,7 +1369,7 @@
 
         // Détection automatique de la section active pendant le scroll
         function updateActiveSection() {
-            const sections = ['accueil', 'formations', 'actualites', 'contact'];
+            const sections = ['accueil', 'departements', 'formations', 'actualites', 'contact'];
             const scrollPosition = window.scrollY + 100;
             
             sections.forEach(sectionId => {
