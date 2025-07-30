@@ -844,7 +844,6 @@
                 
                 <div class="navbar-menu">
                     <button class="navbar-item active" onclick="scrollToSection('accueil')">Accueil</button>
-                    <button class="navbar-item" onclick="scrollToSection('departements')">Départements</button>
                     <button class="navbar-item" onclick="scrollToSection('formations')">Formations</button>
                     <button class="navbar-item" onclick="scrollToSection('admission')">Admission</button>
                     <button class="navbar-item" onclick="scrollToSection('actualites')">Actualités</button>
@@ -861,7 +860,6 @@
         
         <div class="mobile-menu" id="mobile-menu">
             <button class="mobile-menu-item active" onclick="scrollToSection('accueil')">Accueil</button>
-            <button class="mobile-menu-item" onclick="scrollToSection('departements')">Départements</button>
             <button class="mobile-menu-item" onclick="scrollToSection('formations')">Formations</button>
             <button class="mobile-menu-item" onclick="scrollToSection('admission')">Admission</button>
             <button class="mobile-menu-item" onclick="scrollToSection('actualites')">Actualités</button>
@@ -924,23 +922,81 @@
     </div>
     </section>
 
-    <!-- Départements Section -->
-    <section id="departements" class="py-20 bg-white">
+
+    <!-- Formations Section -->
+    <section id="formations" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="section-title">Départements</h2>
-                <p class="section-description">Découvrez nos deux départements, chacun porteur d'une vision scientifique et pédagogique forte.</p>
+                <h2 class="section-title">Nos Formations</h2>
+                <p class="section-description">L'UFR STA place le curseur sur des formations innovantes dans le domaine des STEMS, conformément aux recommandations de la Concertation Nationale sur l'Avenir de l'Enseignement Supérieur (CNAES). Elle développe un modèle pédagogique intégré qui aligne « Formation professionnelle » et « Formation par la Recherche ».</p>
             </div>
-            <div class="grid grid-cols-1 grid-cols-2 gap-8">
+            <!-- Départements (sous-partie) -->
+            <div id="departements" class="mb-16">
+                <h3 class="section-title" style="font-size:2rem; margin-bottom:1rem;">Départements</h3>
+                <p class="section-description mb-8">L'UFR STA est structurée en deux départements complémentaires, chacun proposant des filières innovantes et adaptées aux enjeux scientifiques et technologiques actuels. Découvrez ci-dessous les spécificités de chaque département et leurs filières associées.</p>
                 <!-- Département MIM -->
-                <div class="formation-card">
+                <div class="formation-card mb-12">
                     <div class="card-image">
                         <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Département MIM">
                     </div>
                     <div class="card-content">
-                        <h3 class="card-title">Département MIM</h3>
-                        <h4 class="card-subtitle">Mathématiques, Informatique et Modélisation</h4>
-                        <p class="card-description">Le département MIM forme des étudiants à la pointe des mathématiques appliquées, de l'informatique et de la modélisation, pour répondre aux défis de la science des données, de l'intelligence artificielle et de la recherche opérationnelle.</p>
+                        <h4 class="card-title">Département MIM</h4>
+                        <h5 class="card-subtitle">Mathématiques, Informatique et Modélisation</h5>
+                        <p class="card-description">Le département MIM regroupe deux filières : MPI et MIASS. Il forme des étudiants à la pointe des mathématiques appliquées, de l'informatique et de la modélisation, pour répondre aux défis de la science des données, de l'intelligence artificielle et de la recherche opérationnelle.</p>
+                        <!-- Filières MIM -->
+                        <div id="filieres-mim" class="mt-6">
+                            <h6 class="section-title" style="font-size:1.2rem; margin-bottom:0.5rem;">Filières du département MIM</h6>
+                            <div class="grid grid-cols-1 grid-cols-2 gap-6">
+                                <!-- MPI -->
+                                <div class="formation-card">
+                                    <div class="card-image">
+                                        <img src="https://images.pexels.com/photos/443413/pexels-photo-443413.jpeg" alt="MPI">
+                                        <div class="card-overlay">
+                                            <span class="niveau-badge">Licence</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h4 class="card-title">MPI</h4>
+                                        <h5 class="card-subtitle">Mathématiques, Physique, Informatique</h5>
+                                        <p class="card-description">Formation pluridisciplinaire alliant les mathématiques, la physique et l'informatique pour former des experts polyvalents dans les sciences exactes.</p>
+                                        <div class="skills-list">
+                                            <span class="skill-tag">Mathématiques Appliquées</span>
+                                            <span class="skill-tag">Physique Théorique</span>
+                                            <span class="skill-tag">Programmation</span>
+                                            <span class="skill-tag">Analyse Numérique</span>
+                                        </div>
+                                        <div class="card-footer">
+                                            <span class="duration">Durée: 3 ans</span>
+                                            <button class="card-button">En savoir plus</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- MIASS -->
+                                <div class="formation-card">
+                                    <div class="card-image">
+                                        <img src="https://images.unsplash.com/photo-1614934273523-1c9f0f666c33" alt="MIASS">
+                                        <div class="card-overlay">
+                                            <span class="niveau-badge">Licence</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h4 class="card-title">MIASS</h4>
+                                        <h5 class="card-subtitle">Mathématiques et Informatique Appliquées aux Sciences Sociales</h5>
+                                        <p class="card-description">Formation interdisciplinaire combinant mathématiques, informatique et sciences sociales pour analyser et résoudre des problématiques sociétales.</p>
+                                        <div class="skills-list">
+                                            <span class="skill-tag">Statistiques</span>
+                                            <span class="skill-tag">Modélisation</span>
+                                            <span class="skill-tag">Analyse de Données</span>
+                                            <span class="skill-tag">Recherche Sociale</span>
+                                        </div>
+                                        <div class="card-footer">
+                                            <span class="duration">Durée: 3 ans</span>
+                                            <button class="card-button">En savoir plus</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Département SMU -->
@@ -949,103 +1005,67 @@
                         <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Département SMU">
                     </div>
                     <div class="card-content">
-                        <h3 class="card-title">Département SMU</h3>
-                        <h4 class="card-subtitle">Sciences de la Matière et de l'Univers</h4>
-                        <p class="card-description">Le département SMU propose une formation pluridisciplinaire en physique, chimie et sciences de la Terre, ouvrant sur les métiers de la recherche, de l'enseignement et de l'innovation technologique.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Formations Section -->
-    <section id="formations" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="section-title">Nos Formations</h2>
-                <p class="section-description">
-                    Trois programmes d'excellence pour former les leaders de demain
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 grid-cols-2 grid-cols-3 gap-8">
-                <!-- MPI Formation -->
-                <div class="formation-card">
-                    <div class="card-image">
-                        <img src="https://images.pexels.com/photos/443413/pexels-photo-443413.jpeg" alt="MPI">
-                        <div class="card-overlay">
-                            <span class="niveau-badge">Licence</span>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">MPI</h3>
-                        <h4 class="card-subtitle">Mathématiques, Physique, Informatique</h4>
-                        <p class="card-description">Formation pluridisciplinaire alliant les mathématiques, la physique et l'informatique pour former des experts polyvalents dans les sciences exactes.</p>
-                        <div class="skills-list">
-                            <span class="skill-tag">Mathématiques Appliquées</span>
-                            <span class="skill-tag">Physique Théorique</span>
-                            <span class="skill-tag">Programmation</span>
-                            <span class="skill-tag">Analyse Numérique</span>
-                        </div>
-                        <div class="card-footer">
-                            <span class="duration">Durée: 3 ans</span>
-                            <button class="card-button">En savoir plus</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SML Formation -->
-                <div class="formation-card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1521802077481-0d9be31078ba" alt="SML">
-                        <div class="card-overlay">
-                            <span class="niveau-badge">Licence</span>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">SML</h3>
-                        <h4 class="card-subtitle">Sciences de la Mer et du littoral</h4>
-                        <p class="card-description">Formation spécialisée dans l'étude des écosystèmes marins et côtiers, développant une expertise en océanographie et protection de l'environnement.</p>
-                        <div class="skills-list">
-                            <span class="skill-tag">Océanographie</span>
-                            <span class="skill-tag">Écologie Marine</span>
-                            <span class="skill-tag">Biologie Marine</span>
-                            <span class="skill-tag">Gestion Côtière</span>
-                        </div>
-                        <div class="card-footer">
-                            <span class="duration">Durée: 3 ans</span>
-                            <button class="card-button">En savoir plus</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- MIASS Formation -->
-                <div class="formation-card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1614934273523-1c9f0f666c33" alt="MIASS">
-                        <div class="card-overlay">
-                            <span class="niveau-badge">Licence</span>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">MIASS</h3>
-                        <h4 class="card-subtitle">Mathématiques et Informatique Appliquées aux Sciences Sociales</h4>
-                        <p class="card-description">Formation interdisciplinaire combinant mathématiques, informatique et sciences sociales pour analyser et résoudre des problématiques sociétales.</p>
-                        <div class="skills-list">
-                            <span class="skill-tag">Statistiques</span>
-                            <span class="skill-tag">Modélisation</span>
-                            <span class="skill-tag">Analyse de Données</span>
-                            <span class="skill-tag">Recherche Sociale</span>
-                        </div>
-                        <div class="card-footer">
-                            <span class="duration">Durée: 3 ans</span>
-                            <button class="card-button">En savoir plus</button>
+                        <h4 class="card-title">Département SMU</h4>
+                        <h5 class="card-subtitle">Sciences de la Matière et de l'Univers</h5>
+                        <p class="card-description">Le département SMU regroupe deux filières : SML et PA (Physique Appliquée). Il propose une formation pluridisciplinaire en physique, chimie et sciences de la Terre, ouvrant sur les métiers de la recherche, de l'enseignement et de l'innovation technologique.</p>
+                        <!-- Filières SMU -->
+                        <div id="filieres-smu" class="mt-6">
+                            <h6 class="section-title" style="font-size:1.2rem; margin-bottom:0.5rem;">Filières du département SMU</h6>
+                            <div class="grid grid-cols-1 grid-cols-2 gap-6">
+                                <!-- SML -->
+                                <div class="formation-card">
+                                    <div class="card-image">
+                                        <img src="https://images.unsplash.com/photo-1521802077481-0d9be31078ba" alt="SML">
+                                        <div class="card-overlay">
+                                            <span class="niveau-badge">Licence</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h4 class="card-title">SML</h4>
+                                        <h5 class="card-subtitle">Sciences de la Mer et du littoral</h5>
+                                        <p class="card-description">Formation spécialisée dans l'étude des écosystèmes marins et côtiers, développant une expertise en océanographie et protection de l'environnement.</p>
+                                        <div class="skills-list">
+                                            <span class="skill-tag">Océanographie</span>
+                                            <span class="skill-tag">Écologie Marine</span>
+                                            <span class="skill-tag">Biologie Marine</span>
+                                            <span class="skill-tag">Gestion Côtière</span>
+                                        </div>
+                                        <div class="card-footer">
+                                            <span class="duration">Durée: 3 ans</span>
+                                            <button class="card-button">En savoir plus</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- PA (Physique Appliquée) -->
+                                <div class="formation-card">
+                                    <div class="card-image">
+                                        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b" alt="Physique Appliquée">
+                                        <div class="card-overlay">
+                                            <span class="niveau-badge">Licence</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h4 class="card-title">PA</h4>
+                                        <h5 class="card-subtitle">Physique Appliquée</h5>
+                                        <p class="card-description">La filière Physique Appliquée forme des spécialistes en physique expérimentale et appliquée, capables d'innover dans les domaines de l'énergie, des matériaux et des technologies émergentes.</p>
+                                        <div class="skills-list">
+                                            <span class="skill-tag">Physique Expérimentale</span>
+                                            <span class="skill-tag">Matériaux</span>
+                                            <span class="skill-tag">Énergie</span>
+                                            <span class="skill-tag">Technologies Innovantes</span>
+                                        </div>
+                                        <div class="card-footer">
+                                            <span class="duration">Durée: 3 ans</span>
+                                            <button class="card-button">En savoir plus</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
         <!-- Admission Section -->
     <section id="admission" class="py-20 bg-white">
@@ -1187,7 +1207,7 @@
                             </div>
                             <div>
                                 <p class="font-semibold">Email</p>
-                                <p>contact@ufrsta.uam.sn</p>
+                                <p>ufr-sta@.uam.sn</p>
                             </div>
                         </div>
                     </div>
@@ -1369,7 +1389,7 @@
 
         // Détection automatique de la section active pendant le scroll
         function updateActiveSection() {
-            const sections = ['accueil', 'departements', 'formations', 'actualites', 'contact'];
+            const sections = ['accueil', 'formations', 'actualites', 'contact'];
             const scrollPosition = window.scrollY + 100;
             
             sections.forEach(sectionId => {
